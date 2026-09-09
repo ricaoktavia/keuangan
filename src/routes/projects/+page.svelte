@@ -73,7 +73,7 @@
 					<div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
 						<div 
 							class="bg-brand-secondary h-full transition-all duration-1000" 
-							style="width: {program.totalBudget > 0 ? Math.min((program.totalRealization / parseFloat(program.totalBudget) * 100), 100).toFixed(1) : 0}%"
+							style="width: {parseFloat(program.totalBudget) > 0 ? Math.min((program.totalRealization / parseFloat(program.totalBudget) * 100), 100).toFixed(1) : 0}%"
 						></div>
 					</div>
 				</div>

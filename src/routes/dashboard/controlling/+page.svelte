@@ -61,7 +61,7 @@
 							</div>
 							<h3 class="text-2xl font-bold text-slate-800">{program.name}</h3>
 							<div class="flex items-center gap-2 text-sm text-slate-400">
-								<Clock size={14} /> Diajukan pada {new Date(program.createdAt).toLocaleDateString('id-ID')}
+								<Clock size={14} /> Diajukan pada {program.createdAt ? new Date(program.createdAt).toLocaleDateString('id-ID') : '-'}
 							</div>
 						</div>
 

@@ -196,7 +196,7 @@
 					{#each data.recentRealizations as item}
 						<div class="p-5 bg-white/50 border border-slate-100 rounded-2xl group hover:shadow-lg transition-all">
 							<div class="flex justify-between items-start mb-3">
-								<div class="text-[10px] font-bold text-slate-400 uppercase">{new Date(item.createdAt).toLocaleString('id-ID')}</div>
+								<div class="text-[10px] font-bold text-slate-400 uppercase">{item.createdAt ? new Date(item.createdAt).toLocaleString('id-ID') : '-'}</div>
 								<div class="font-bold text-brand-secondary">{formatCurrency(item.amount)}</div>
 							</div>
 							<p class="text-sm font-semibold text-slate-800 mb-2">{item.description}</p>

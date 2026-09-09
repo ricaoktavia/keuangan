@@ -33,7 +33,7 @@
 	}
 </script>
 
-{#snippet statusIcon(status)}
+{#snippet statusIcon(status: string)}
 	{#if status === 'approved'}
 		<CheckCircle2 size={14} />
 	{:else if status === 'rejected'}

@@ -48,8 +48,8 @@
 		datasets: [
 			{
 				data: [
-					Math.max(0, parseFloat(data.summary.totalBudget) - data.summary.totalRealization),
-					data.summary.totalRealization
+					Math.max(0, Number(data.summary.totalBudget || 0) - Number(data.summary.totalRealization || 0)),
+					Number(data.summary.totalRealization || 0)
 				],
 				backgroundColor: ['rgba(226, 232, 240, 0.8)', 'rgba(99, 102, 241, 0.8)'],
 				borderColor: ['#fff', '#fff'],

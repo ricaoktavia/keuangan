@@ -69,7 +69,7 @@
 						<td class="px-6 py-5">
 							<div class="flex items-center gap-2 text-slate-500 font-medium text-sm">
 								<Clock size={14} />
-								{new Date(log.createdAt).toLocaleString('id-ID')}
+								{log.createdAt ? new Date(log.createdAt).toLocaleString('id-ID') : '-'}
 							</div>
 						</td>
 						<td class="px-6 py-5">
